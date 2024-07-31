@@ -14,7 +14,7 @@ const sendShieldedTransaction = async (signer, destination, data, value) => {
 };
 
 async function main() {
-  const contractAddress = "0x1E2015c85710140E000B87a05A98De818e288Ce0";
+  const contractAddress = "0x8b9cfadf74ed72a44c8da8832bf4fbe0c32ade22";
   const [signer] = await hre.ethers.getSigners();
   const contractFactory = await hre.ethers.getContractFactory("TestNFT");
   const contract = contractFactory.attach(contractAddress);
